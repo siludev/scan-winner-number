@@ -2,8 +2,6 @@
 
 // Array mit gültigen Gewinnnummern
 const gültigeGewinnnummern = [
-    "078690", "026953", // TEST NUMMERN
-	
     "088726", "096892", "111385", "154361", "156058", "223409", 
     "273396", "348189", "355274", "411386", "489652", "525094", 
     "559510", "595141", "693753", "694533", "711740", "748592", 
@@ -12,7 +10,6 @@ const gültigeGewinnnummern = [
 
 // Array mit gültigen Endziffern (letzte 3 Ziffern)
 const gültigeEndziffern = [
-    "687", "688", "689", // TEST Endziffern
     "073", "177", "291", "391", "447", "533", "611", "701", "848", "970"
 ];
 
