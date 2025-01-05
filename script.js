@@ -2,7 +2,7 @@
 
 // Array mit gültigen Gewinnnummern
 const gültigeGewinnnummern = [
-    "123456", "234567", "345678", "456789", "567890", "026953", // TEST NUMMERN
+    "078690", "026953", // TEST NUMMERN
 	
     "088726", "096892", "111385", "154361", "156058", "223409", 
     "273396", "348189", "355274", "411386", "489652", "525094", 
@@ -12,7 +12,7 @@ const gültigeGewinnnummern = [
 
 // Array mit gültigen Endziffern (letzte 3 Ziffern)
 const gültigeEndziffern = [
-    "687", "688", "689", "123", "999", // TEST Endziffern
+    "687", "688", "689", // TEST Endziffern
     "073", "177", "291", "391", "447", "533", "611", "701", "848", "970"
 ];
 
@@ -74,8 +74,8 @@ function recognizeTextFromImage() {
     const height = 100; // Höhe des Ausschnitts
 
     // Berechne die mittigen Koordinaten für den Ausschnitt
-    const x = (videoWidth - width);  // Horizontal mittig
-    const y = (videoHeight - height); // Vertikal mittig
+    const x = (videoWidth - width) / 2;  // Horizontal mittig
+    const y = (videoHeight - height) / 2; // Vertikal mittig
 
     // Größe des Canvas auf die Videoauflösung setzen (optional: kleinere Auflösung)
     canvasElement.width = width;  // Canvas entspricht der Breite des Ausschnitts
