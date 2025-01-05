@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITY RING</title>
+    <link rel="stylesheet" href="stylesNEW.css">
+</head>
+<body>
+    <div class="container">
+		<div class="image-container">
+        <img src="https://www.city-ring.at/images/city_ring_logo.png" alt="Logo">
+		</div>
+		
+        <h1>Weihnachtsaktion Gewinnnummer Scannen</h1>
+        <p>Halte die Kamera auf die Gewinnnummer</p>
+		
+		<div id="result"></div>
+        <div class="video-container">
+			<video id="preview" width="100%" height="auto" style="border: 1px solid black;" autoplay muted playsinline></video>
+            <div id="searchArea" class="search-area"></div> <!-- Das rechteckige Suchfeld -->
+        </div>
+        <canvas id="canvas" style="display: none;"></canvas>
+		<div id="result"></div>
+		
+		
+    </div>
+
+    <!-- Tesseract.js einbinden -->
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.1/dist/tesseract.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
